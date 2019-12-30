@@ -12,9 +12,9 @@ eng.runAndWait()
 conn = smtplib.SMTP('smtp.gmail.com', 587)
 conn.ehlo()
 conn.starttls()
-conn.login('abhilash.biswas2000@gmail.com', 'yanyanbadbadthullu')
-conn.sendmail('wadethecuboidalfox@gmail.com', 'abone838@gmail.com',\
-              'Subject:Alert\n\n your otp:'+ otp_gen())
+conn.login('sender's email', 'password')  //enter the email and password of the sender
+conn.sendmail('recipient's email'\
+              'Subject:Alert\n\n your otp:'+ otp_gen()) //enter reciever's email address
 conn.quit()
 eng.say('Your OTP is mailed')
 eng.runAndWait()
